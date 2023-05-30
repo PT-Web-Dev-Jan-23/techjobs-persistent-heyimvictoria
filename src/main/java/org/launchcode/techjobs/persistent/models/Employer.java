@@ -10,7 +10,7 @@ public class Employer extends AbstractEntity {
     @Size(min = 3, max = 100)
     @NotNull(message = "Location is required")
     private String location;
-
+    @NotNull(message = "Location is required")
     public Employer(String location) {
         this.location = location;
     }
