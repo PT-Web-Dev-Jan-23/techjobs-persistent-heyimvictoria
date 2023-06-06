@@ -1,14 +1,16 @@
 package org.launchcode.techjobs.persistent.models;
 
 import javax.persistence.*;
+import javax.validation.constraints.NotNull;
 
 @Entity
 public class Job extends AbstractEntity{
 
-    @Id
-    @GeneratedValue
+//    @Id
+//    @GeneratedValue
 //changed
     @ManyToOne
+    @NotNull(message = "Employer is required")
     private Employer employer;
     private String skills;
 
