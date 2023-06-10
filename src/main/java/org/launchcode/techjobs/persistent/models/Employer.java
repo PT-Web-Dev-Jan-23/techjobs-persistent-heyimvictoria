@@ -25,6 +25,9 @@ public class Employer extends AbstractEntity {
         this.location = location;
     }
 
+    public Employer(){
+
+    }
     public String getLocation() {
         return location;
     }
@@ -37,7 +40,7 @@ public class Employer extends AbstractEntity {
         this.jobs = jobs;
     }
 
-    public Employer(){
-
-    }
+//    public List<Job> getJobs() {
+//        return jobs;
+//    }
 }
