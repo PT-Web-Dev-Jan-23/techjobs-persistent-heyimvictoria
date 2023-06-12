@@ -12,7 +12,7 @@ public class Job extends AbstractEntity{
 //    @GeneratedValue
 //changed
     @ManyToOne
-    @NotNull(message = "Employer is required")
+//    @NotNull(message = "Employer is required")
     private Employer employer;
 
     //at first the job object stored many skills objects as strings List <String> or i think String skills per the starter code

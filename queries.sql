@@ -11,8 +11,9 @@ WHERE location = 'St. Louis City';
 -- Part 3: Test it with SQL
 DROP TABLE job;
 -- Part 4: Test it with SQL
-
-SELECT s.name
+SELECT name
 FROM skill s
-JOIN job_skills js ON s.id = js.skills_id
+INNER JOIN job_skills js ON s.id = js.skills_id
+WHERE js.skills_id IS NOT NULL
 ORDER BY s.name ASC;
+
