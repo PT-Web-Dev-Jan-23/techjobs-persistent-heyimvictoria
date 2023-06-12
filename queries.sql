@@ -22,5 +22,5 @@ ORDER BY name ASC;
 --FROM skill s
 --INNER JOIN job_skills js ON s.id = js.skills_id
 --WHERE js.skills_id IS NOT NULL
---ORDER BY s.name ASC;
+--ORDER BY s.name ASC; think was more appropriate to display just the name but the test wants all ???
 
